@@ -18,7 +18,8 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--ink); color: var(--cream); overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; background: var(--ink); color: var(--cream); overflow-x: hidden; /* ... existing styles ... */
+  overscroll-behavior-y: none; }
     .display-title { font-family: 'Anton', sans-serif; letter-spacing: -0.035em; line-height: .88; }
     .hero-bg {
       background:
@@ -268,14 +269,21 @@
     </div>
   </section>
 
-  <footer class="py-20 border-t border-zinc-800 text-center bg-[#0d0d12] px-6">
-    <p class="display-title text-4xl md:text-6xl mb-5">Let’s build the story.<span class="kinetic-word"> Together.</p><span
-    <p class="text-zinc-400 mb-8">Available for freelance and full-time productions.</p>
-    <div class="flex flex-wrap justify-center gap-5">
-      <a href="mailto:jpdabdee@gmail.com" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest">Email</a>
-      <a href="https://app.staffmeup.com/profile/httpstaffmeupcomprofileid24870" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest">Staff Me Up</a>
-      <a href="Josh_Dabdee_2026_Resume.pdf" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest">Resume PDF</a>
-    </div>
-  </footer>
+  <footer <footer class="py-24 border-t-4 border-[#20e0c4] text-center bg-[#050505] px-6 relative">
+  <!-- Visual wayfinding: A small decorative element to mark the end -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-1 bg-[#20e0c4] rounded-full"></div>
+  
+  <p class="display-title text-4xl md:text-6xl mb-5">Let’s build the story.</p>
+  <p class="text-zinc-400 mb-8 uppercase tracking-widest text-xs font-bold">— End of Portfolio —</p>
+  
+  <!-- Your existing links -->
+  <div class="flex flex-wrap justify-center gap-8">
+    <a href="mailto:jpdabdee@gmail.com" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest transition">Email</a>
+    <a href="https://app.staffmeup.com/profile/id/24870" target="_blank" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest transition">Staff Me Up</a>
+    <a href="Josh_Dabdee_2026_Resume.pdf" class="text-white hover:text-[#20e0c4] font-bold uppercase tracking-widest transition">Resume</a>
+  </div>
+  
+  <p class="mt-16 text-[10px] text-zinc-600 uppercase tracking-tighter">© 2026 Joshua Dabdee · All Rights Reserved</p>
+</footer>
 </body>
 </html>
