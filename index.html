@@ -131,6 +131,16 @@
       padding-bottom: 10px;
     }
 
+    .hero-section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--dark-line);
+      padding-bottom: 10px;
+      color: var(--muted);
+    }
+
     /* Reel */
     .reel { background: var(--paper); color: var(--black); padding: 120px 60px; }
     .reel h2 { font-size: clamp(100px, 18vw, 220px); margin-bottom: 40px; }
@@ -203,7 +213,10 @@
   </nav>
 
   <header class="hero">
-    <div class="section-num micro">01</div>
+    <div class="hero-section-head">
+      <span class="micro">01</span>
+      <span class="micro">Intro</span>
+    </div>
     <p class="micro" style="color:var(--muted)">Narrative Producer & Storyteller</p>
     <h1 class="display">Joshua<br>Dabdee</h1>
     <p class="hero-sub">I turn raw footage into stories people feel.</p>
@@ -243,7 +256,10 @@
   </section>
 
   <section class="footer-cta">
-    <div class="section-num micro" style="margin-bottom:60px">04</div>
+    <div class="section-head">
+      <span class="micro">04</span>
+      <span class="micro">Contact</span>
+    </div>
     <h2 class="display">Let’s build the story.<br>Together.</h2>
     <div class="cta-links">
       <a href="mailto:jpdabdee@gmail.com">Email</a>
