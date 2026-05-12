@@ -84,11 +84,11 @@
 
     /* Hero */
     .hero { 
-      height: 100vh; 
+      min-height: 100vh; 
       display: flex; 
       flex-direction: column; 
       justify-content: center; 
-      padding: 0 60px; 
+      padding: 120px 60px 80px; 
       border-bottom: 1px solid var(--dark-line);
       position: relative;
       overflow: hidden;
@@ -184,7 +184,7 @@
     }
     .police-24-7-img {background-position: center 10%; }
     .different-breed-img {background-position: 70% center; }
-    .holy-marvels-img {bacground-position; center 90%; }
+    .holy-marvels-img { background-position: center 90%; }
     .credit:hover .credit-img { transform: scale(1.05); }
     .credit-text { position: absolute; bottom: 20px; left: 20px; z-index: 2; }
     .credit h3 { font-size: 13px; font-weight: 900; text-transform: uppercase; }
@@ -197,6 +197,35 @@
     .cta-links a { font-size: 14px; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid var(--black); padding-bottom: 5px; }
 
     .final-footer { padding: 60px; display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--muted); }
+
+
+    @media (max-height: 500px) and (orientation: landscape) {
+      .hero {
+        min-height: auto;
+        justify-content: flex-start;
+        padding-top: 95px;
+        padding-bottom: 60px;
+      }
+
+      .hero-section-head {
+        margin-bottom: 24px;
+      }
+
+      .hero h1 {
+        font-size: clamp(56px, 14vw, 110px);
+        margin-bottom: 20px;
+      }
+
+      .hero-sub {
+        font-size: 22px;
+        margin-bottom: 14px;
+      }
+
+      .hero-detail {
+        font-size: 13px;
+        line-height: 1.45;
+      }
+    }
 
     @media (max-width: 1024px) {
       .credits-grid { grid-template-columns: repeat(2, 1fr); }
